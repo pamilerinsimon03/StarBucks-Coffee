@@ -1,0 +1,637 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #393E3D;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+nav {
+    box-shadow: 0 5px 80px #8f8f8f;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    background-color: white;
+    z-index: 1000;
+}
+.navbar-brand {
+    margin-left: 100px;
+}
+#container-fluid {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-toggle {
+    width: 55px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    background-color: transparent;
+    border-radius: 5px;
+    padding-top: 8px;
+    display: none;
+}
+.bar {
+    width: 100%;
+    height: 2px;
+    background-color: #1C3534;
+    float: left;
+    margin-bottom: 8px;
+}
+@media (max-width: 991px) {
+    .navbar-toggle {
+        display: block;
+    }
+    #container-fluid {
+        display: none;
+        width: 100%;
+        border-top: 1px solid #02b74d;
+        padding-top: 20px;
+        margin-top: 80px;
+    }
+    #navbar-nav {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .nav-item {
+        display: block;
+        padding: 15px 0;
+        width: 100%;
+        margin-left: 0 !important;
+    }
+    #container-fluid.show {
+        display: block;
+        position: relative;
+        right: 100px;
+        width: 100%;
+    }
+}
+
+#navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    color: #393E3D;
+    font-weight: 550;
+}
+.nav-link:hover {
+    color: #02b74d;
+}
+#Home {
+    background-color: #ECDBC9;
+    padding: 150px 100px;
+}
+#Home h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+#Home h1 {
+    margin-top: 15px;
+}
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    flex: 1;
+    text-align: left;
+}
+@keyframes moveImage {
+    0% {
+        transform: translate(10px, -10px); 
+    }
+    50% {
+        transform: translate(-10px, 10px);
+    }
+    100% {
+        transform: translate(10px, -10px);
+    }
+}
+#Home>.right>img {
+    animation: moveImage 5s linear infinite; 
+}
+.right {
+    flex: 1;
+}
+#Home>.right>img {
+    width: 100%; 
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+.left>h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.left>h1 {
+    color: #066F4A;
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+}
+.left>h2 {
+    color: #1C3534;
+    margin-bottom: 20px;
+}
+.Green-Button {
+    border: #1C3534 2px solid;
+    background-color: transparent;
+    border-radius: 30px;
+    height: 40px;
+    width: 100px;
+    color: #1C3534;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+.Green-Button:hover {
+    background-color: #1C3534;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+.Green-Button>a {
+    color: inherit;
+}
+.card {
+    flex: 1;
+    height: 320px;
+}
+#Shop {
+    padding-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+#Shop>h2 {
+    font-size: 1rem;
+}
+#Shop>h1 {
+    color: #066F4A;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.shop-container {
+    margin-top: 150px;
+}
+.strawberry {
+    background-color: #066F4A;
+    flex: 1;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.choco {
+    background-color: #066F4A;
+    flex: 1;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.vanilla {
+    background-color: #066F4A;
+    flex: 1;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.strawberry>.card-div {
+    position: relative;
+    bottom: 110px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+.strawberry>.card-div>img {
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.star-rating {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.star {
+    color: white; 
+}
+.card-div>h3 {
+    font-size: 1.5rem;
+}
+.card-div>h2 {
+    font-size: 1.4rem;
+}
+.Order-Now {
+    color: white;
+    background-color: transparent;
+    border: white 2px solid;
+    border-radius: 30px;
+    height: 40px;
+    width: 100px;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    transition: transform 0.3s ease;
+}
+.Order-Now>a {
+    color: inherit;
+}
+.Order-Now:hover {
+    background-color: white;
+    color: #066F4A;
+}
+.choco>.card-div>img {
+    width: 52%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.choco .card-div {
+    position: relative;
+    bottom: 128px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+.vanilla>.card-div>img {
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.vanilla .card-div {
+    position: relative;
+    bottom: 115px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.flexbox-container img {
+    flex: 1;
+    width: 50%;
+}
+.text-container {
+    flex: 1;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+.text-container h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#Delivery {
+    padding-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: left;
+}
+#Delivery h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+#Delivery h1 {
+    color: #066F4A;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#Delivery img {
+    margin-right: 30px;
+    transition: transform 0.3s ease;
+}
+#App {
+    padding-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+#App>h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+#App>h1 {
+    color: #066F4A;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#App img {
+    margin-left: 30px;
+    transition: transform 0.3s ease;
+}
+#About {
+    padding-top: 100px;
+    transition: transform 0.3s ease;
+}
+#About .flexbox-container {
+    background-color: #ECDBC9;
+    padding: 50px 100px;
+}
+#About img {
+    margin-right: 30px;
+    transition: transform 0.3s ease;
+}
+#About .Green-Button {
+    width: 110px;
+}
+footer {
+    text-align: center;
+}
+#Contact {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+.footer-link {
+    margin: auto 15px;
+}
+#Contact div {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+#Contact div:hover {
+    background-color: #066F4A;
+}
+#Contact img {
+    width: 25px;
+}
+#youtube {
+    padding-top: 8px;
+    padding-left: 2px;
+    width: 35px;
+}
+footer li {
+    display: inline;
+    padding-right: 10px;
+}
+@media (max-width: 576px) {
+    .container-fluid {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .flexbox-container {
+        flex-direction: column;
+    }
+    #Home {
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+    }
+    .left {
+        order: -1;
+        text-align: center;
+    }
+    .right {
+        margin-top: 30px;
+    }
+    .right>img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+    #Shop {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .shop-container {
+        margin-top: 100px;
+    }
+    .card {
+        width: 60%;
+        height: 100px !important;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .strawberry img {
+        width: 30%;
+        height: 150px;
+    }
+    .strawberry>.card-div {
+        bottom: 40px;
+        color: white;
+    }
+    .choco img {
+        width: 50%;
+        height: 150px;
+    }
+    .choco>.card-div {
+        bottom: 40px;
+        color: white;
+    }
+    .vanilla img {
+        width: 30%;
+        height: 150px;
+    }
+    .vanilla>.card-div {
+        bottom: 40px;
+        color: white;
+    }
+    #Delivery {
+        padding-top: 60px;
+    }
+    #Delivery img {
+        width: 100%;
+    }
+    .text-container {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .text-container h3, .text-container p{
+        text-align: center;
+    }
+    .text-container h3 {
+        margin-top: 10px;
+    }
+    .Green-Button {
+        margin: 0 auto;
+    }
+    #App {
+        padding-top: 120px;
+    }
+    #App img {
+        width: 100%;
+        margin: 0 auto;
+        order: -1;
+    }
+    #App p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #App .Green-Button {
+        margin-top: 10px;
+    }
+    #About img {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    #Home>.left>h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #Home>.left>h1 {
+        margin-bottom: 30px;
+    }
+    #Home>.left>h2 {
+        margin-bottom: 35px;
+    }
+    .container-fluid {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .flexbox-container {
+        flex-direction: column;
+    }
+    #Home {
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+    }
+    .left {
+        order: -1;
+        text-align: center;
+    }
+    .right {
+        margin-top: 30px;
+    }
+    .right>img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+    #Shop {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .shop-container {
+        margin-top: 100px;
+    }
+    .card {
+        width: 60%;
+        height: 100px !important;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .strawberry>.card-div>img {
+        width: 20%;
+        height: 150px;
+    }
+    .strawberry>.card-div {
+        bottom: 40px;
+        color: white;
+    }
+    .choco>.card-div>img {
+        width: 40%;
+        height: 180px;
+    }
+    .choco>.card-div {
+        bottom: 40px;
+        color: white;
+    }
+    .vanilla>.card-div>img {
+        width: 20%;
+        height: 150px;
+    }
+    .vanilla>.card-div {
+        bottom: 40px;
+        color: white;
+    }
+    #Delivery {
+        padding-top: 60px;
+    }
+    #Delivery img {
+        width: 100%;
+    }
+    .text-container {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .text-container h3, .text-container p{
+        text-align: center;
+    }
+    .text-container h3 {
+        margin-top: 10px;
+    }
+    .Green-Button {
+        margin: 0 auto;
+    }
+    #App {
+        padding-top: 120px;
+    }
+    #App img {
+        width: 100%;
+        margin: 0 auto;
+        order: -1;
+    }
+    #App p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #App .Green-Button {
+        margin-top: 10px;
+    }
+    #About img {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .strawberry>.card-div, .vanilla>.card-div {
+        bottom: 60px;
+    }
+    .choco>.card-div {
+        bottom: 75px;
+    }
+    .card {
+        height: 290px;
+    }
+    #App img {
+        height: 50%;
+        margin: auto 0;
+        margin-left: 20px;
+    }
+    #About img {
+        height: 50%;
+        margin: auto 0;
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .strawberry>.card-div, .vanilla>.card-div {
+        bottom: 80px;
+    }
+    .choco>.card-div {
+        bottom: 90px;
+    }
+    .card {
+        height: 290px;
+    }
+    #App img {
+        height: 50%;
+        margin: auto 0;
+        margin-left: 20px;
+    }
+    #About img {
+        height: 50%;
+        margin: auto 0;
+        margin-right: 20px;
+    }
+}
